@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <section id="form-build">
+    <h1>Encontre o seu Imóvel</h1>
+    <form action="">
+      <fieldset>
+        <legend>Selecione o negócio</legend>
+    
+        <div>
+          <input type="radio" id="buy" name="business" value="compra"
+                 checked>
+          <label for="buy">Compra</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="sell" name="business" value="vende">
+          <label for="sell">Venda</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="rent" name="business" value="aluga">
+          <label for="rent">Aluga</label>
+        </div>
+    </fieldset>
+  
+
+      <div class="wrap-input">
+        <label for="type">Tipo de imóvel</label>
+             <select name="imoveis" id="imoveis">
+        <option value="">--Por Favor Selecione um item--</option>
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="kitnet">Kitnet</option>
+        <option value="sitio">Sitio</option>
+             </select>
+      </div>
+     
+     <div class="wrap-input">
+       <label for="size">Tamanho do Imóvel</label>
+       <input type="text" placeholder="m²">
+     </div>
+    <fieldset id="location">
+  
+      <legend>Localizção</legend>
+      <input type="text" name="street" id="street" placeholder="Rua">
+      <input type="text" name="neigbourhood" id="" placeholder="Bairro">
+      <input type="text" name="neigbourhood" id="" placeholder="Cidade">
+      <label for="referency">Ponto de referencia</label>
+      <textarea name="referency" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">Encontre o seu futuro imóvel</button>
+    
+    </form>
+    
+  </section>
+  
+ 
+</body>
+</html>
