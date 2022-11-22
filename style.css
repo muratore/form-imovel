@@ -51,4 +51,10 @@ form button{
 
 #location input{
   margin: 5px 0;
+};
+
+input[type="reset"]{
+  color:white;
+  background-color: red;
+
 }
