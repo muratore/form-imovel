@@ -7,66 +7,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Formulário</title>
 </head>
 <body>
+<main>
 
-  <section id="form-build">
-    <h1>Encontre o seu Imóvel</h1>
-    <form action="">
-      <fieldset>
-        <legend>Selecione o negócio</legend>
-    
-        <div>
-          <input type="radio" id="buy" name="business" value="compra"
-                 checked>
-          <label for="buy">Compra</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="sell" name="business" value="vende">
-          <label for="sell">Venda</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="rent" name="business" value="aluga">
-          <label for="rent">Aluga</label>
-        </div>
-    </fieldset>
-  
-
-      <div class="wrap-input">
-        <label for="type">Tipo de imóvel</label>
-             <select name="imoveis" id="imoveis">
-        <option value="">--Por Favor Selecione um item--</option>
-        <option value="casa">Casa</option>
-        <option value="apartamento">Apartamento</option>
-        <option value="kitnet">Kitnet</option>
-        <option value="sitio">Sitio</option>
-             </select>
+  <div class="background">
+  </div>
+    <section id="form-build">
+      <h1>Ache o lugar perfeito para você ser feliz</h1>
+      <form action="">
+        <fieldset id="negocios">
+          <legend>Selecione o negócio</legend>
+          <div class="wrap-negocio">
+            <div class="negocio">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <input type="radio" id="buy" name="business" value="compra"
+                     checked>
+              <label for="buy">Comprar</label>
+            </div>
+      
+            <div class="negocio">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <input type="radio" id="sell" name="business" value="vende">
+              <label for="sell">Vender</label>
+            </div>
+      
+            <div class="negocio">
+              <i class="fa-solid fa-key"></i>
+              <input type="radio" id="rent" name="business" value="aluga">
+              <label for="rent">Alugar</label>
+            </div>
+          </div>
+         
+            </fieldset>
+          
+              <div class="wrap-input">
+                <label for="type">Tipo de imóvel</label>
+                <select name="imoveis" id="imoveis">
+                <option value="">-- Selecione o tipo de imóvel --</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="kitnet">Kitnet</option>
+                <option value="sitio">Sitio</option>
+                </select>
+              </div>
+          
+            <div class="wrap-input">
+              <label for="size">Tamanho do Imóvel</label>
+              <input type="text" placeholder="m²">
+            </div>
+            <fieldset id="location">
+              <legend>Localizção</legend>
+              <input type="text" maxlength="8" pattern="[0-9]" name="cep" id="cep" placeholder="Cep - Insira somente números">
+              <input type="text" name="street" id="street" placeholder="Rua">
+              <input type="text" name="district" id="district" placeholder="Bairro">
+              <input type="text" name="city" id="city" placeholder="Cidade">
+              <label id="referency" for="referency">Ponto de referencia</label>
+              <textarea name="referency" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+      <div id="wrap--btn">
+        <button type="submit">Encontre o seu futuro imóvel</button>
+        <button type="reset">Limpar</button>
       </div>
+    
      
-     <div class="wrap-input">
-       <label for="size">Tamanho do Imóvel</label>
-       <input type="text" placeholder="m²">
-     </div>
-    <fieldset id="location">
-  
-      <legend>Localizção</legend>
-      <input type="text" name="street" id="street" placeholder="Rua">
-      <input type="text" name="neigbourhood" id="" placeholder="Bairro">
-      <input type="text" name="neigbourhood" id="" placeholder="Cidade">
-      <label for="referency">Ponto de referencia</label>
-      <textarea name="referency" id="" cols="30" rows="10"></textarea>
-    </fieldset>
-    <button type="submit">Encontre o seu futuro imóvel</button>
-    <button type="reset">Limpar</button>
     
-    </form>
+      </form>
     
-  </section>
+    </section>
   
-<script src="script.js"></script>
+</main>
+ 
+  
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
