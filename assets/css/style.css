@@ -1,0 +1,114 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 251, 251);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  color: white; 
+}
+
+/* Imagem de fundo do Body */
+body{
+  background-image: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Background transparente abaixo do form */
+.background{
+  display: block;
+  background-color: rgb(20, 17, 41);
+  opacity: .5;
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+}
+/* Section que é o container do form */
+#form-build{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  z-index: 10;
+  position: relative;
+}
+
+#form-build h1{
+  margin: 2rem 0 0 0;
+}
+
+.wrap-negocio{
+  display: flex;
+  justify-content: space-around;
+}
+.negocio{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.negocio i{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.wrap-input{
+  display: flex;
+  margin: 15px 0 0 0;
+  flex-direction: column;
+}
+
+input, select, textarea{
+  border: none;
+  border-bottom: .5px solid white;
+  outline: none;
+  background-color: inherit;
+  padding: 5px; 
+}
+
+fieldset{
+  padding: 20px;
+  margin: 15px 0 15px 0
+}
+.wrap-input > label{
+  margin: 0 0 .5rem 0;
+}
+
+#location, #negocios{
+  display: flex;
+  flex-direction: column;
+  border: .5px solid rgb(255, 253, 253)
+}
+
+#referency{
+  margin-top: 1rem;
+}
+
+/* Estilização dos Botòes */
+#wrap--btn{
+  display: flex;
+  justify-content: space-between;  
+}
+#wrap--btn button{
+  padding: .5rem;
+  border: none;
+  color: black;
+}
+ #wrap--btn button:last-child{
+  float: right;
+  background-color: rgb(243, 141, 123);
+  color: white;
+}
+
+/* color do Placeholder */
+::placeholder{
+  color: white;
+}
