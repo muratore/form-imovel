@@ -71,7 +71,7 @@ input, select, textarea{
   border-bottom: .5px solid white;
   outline: none;
   background-color: inherit;
-  padding: 5px; 
+  padding: .5rem 0 .5rem 0; 
 }
 
 fieldset{
